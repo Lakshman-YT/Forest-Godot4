@@ -2,6 +2,9 @@
 <hr>
 <h2>Note : This project is for educational purpose only</h2>
 Link For Project (Gdrive) : https://drive.google.com/file/d/1sqWEC594X1WcdFmauGX1NTckl2VSl_Fv/view?usp=sharing
+Youtube link: https://www.youtube.com/@gwtuts4061
+Discord : https://discord.gg/YACRz8w4
+Instagram : https://www.instagram.com/lakshman_choudhary01/
 <hr>
 This game is made for Godot 4. 
 <h2>Images of game </h2>
