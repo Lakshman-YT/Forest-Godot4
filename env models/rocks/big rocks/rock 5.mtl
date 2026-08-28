@@ -1,0 +1,13 @@
+# Blender 5.1.2 MTL File: 'stones.blend'
+# www.blender.org
+
+newmtl Default_OBJ
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+map_Kd D:/assets/extracted/rocks/rock 1/textures/procedural_rocks2_Base_Color.png
+map_Ns D:/assets/extracted/rocks/rock 1/textures/procedural_rocks2_Roughness.png
+map_Bump -bm 1.700000 D:/assets/extracted/rocks/rock 1/textures/procedural_rocks2_Normal_OpenGL.png

@@ -1,0 +1,22 @@
+[gd_scene format=3 uid="uid://25aji3ru8squ"]
+
+[ext_resource type="PackedScene" uid="uid://jk3cj71isunj" path="res://env models/plants/tree/pine2.gltf" id="1_4lfik"]
+[ext_resource type="Material" uid="uid://cefya2g3sxwl7" path="res://env models/plants/tree/materials/pine_bark_material.res" id="2_8owst"]
+[ext_resource type="Material" uid="uid://bbq3wxa6fmaf5" path="res://env models/plants/tree/materials/pine_leaf_material.res" id="3_3uyj6"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_4lfik"]
+size = Vector3(1, 6.76416, 0.82250977)
+
+[node name="pine2" unique_id=339304573 instance=ExtResource("1_4lfik")]
+
+[node name="Pine_large_1_LOD0" parent="." index="0" unique_id=1019120031]
+surface_material_override/0 = ExtResource("2_8owst")
+surface_material_override/1 = ExtResource("3_3uyj6")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="." index="1" unique_id=1871305056]
+collision_layer = 2
+collision_mask = 0
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D" index="0" unique_id=1235255355]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.88208, -0.015991211)
+shape = SubResource("BoxShape3D_4lfik")

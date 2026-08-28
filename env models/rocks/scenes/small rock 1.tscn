@@ -1,0 +1,11 @@
+[gd_scene format=3 uid="uid://bl836ehjehdml"]
+
+[ext_resource type="ArrayMesh" uid="uid://beswe7l73olld" path="res://env models/rocks/small rocks/rock 1.obj" id="1_h8rva"]
+[ext_resource type="Texture2D" uid="uid://c5imwinsqjfdo" path="res://env models/rocks/texture/rock 2 base.jpg" id="2_h8rva"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_her87"]
+albedo_texture = ExtResource("2_h8rva")
+
+[node name="MeshInstance3D" type="MeshInstance3D" unique_id=1732528985]
+mesh = ExtResource("1_h8rva")
+surface_material_override/0 = SubResource("StandardMaterial3D_her87")

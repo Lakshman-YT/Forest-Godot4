@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://dpqoshu5atxy1"
+path="res://.godot/imported/river flow 1.mp3-434927b1a83a6a6f7004d868abb5ec8c.mp3str"
+
+[deps]
+
+source_file="res://env models/audio/river flow 1.mp3"
+dest_files=["res://.godot/imported/river flow 1.mp3-434927b1a83a6a6f7004d868abb5ec8c.mp3str"]
+
+[params]
+
+loop=true
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

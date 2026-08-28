@@ -1,0 +1,14 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://bauwwqa5uyt12"]
+
+[ext_resource type="Texture2D" uid="uid://c5imwinsqjfdo" path="res://env models/rocks/texture/rock 2 base.jpg" id="1_4o8eo"]
+[ext_resource type="Texture2D" uid="uid://dsim3vi3pnnly" path="res://env models/rocks/texture/rock 2 normal.jpg" id="2_kq6s7"]
+[ext_resource type="Texture2D" uid="uid://dqvv6d7bco8ou" path="res://env models/rocks/texture/rock 2 ao.jpg" id="2_nan14"]
+[ext_resource type="Texture2D" uid="uid://htfjwbs2lrbk" path="res://env models/rocks/texture/rock 2 roughness.jpg" id="3_nan14"]
+
+[resource]
+albedo_texture = ExtResource("1_4o8eo")
+roughness_texture = ExtResource("3_nan14")
+normal_enabled = true
+normal_texture = ExtResource("2_kq6s7")
+ao_enabled = true
+ao_texture = ExtResource("2_nan14")

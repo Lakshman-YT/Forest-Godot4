@@ -1,0 +1,37 @@
+[gd_scene format=3 uid="uid://0f41iahap7f4"]
+
+[ext_resource type="PackedScene" uid="uid://dku4fk1b6ljca" path="res://env models/plants/grass/grass4.gltf" id="1_nw1hp"]
+[ext_resource type="Shader" uid="uid://dw0wl0aeep0uk" path="res://env models/plants/grass/materials/shader/fern_shader.gdshader" id="2_y3nfh"]
+[ext_resource type="Texture2D" uid="uid://cm3kuvtlggr83" path="res://env models/plants/grass/textures/ferm_albedo.jpg" id="3_kraxt"]
+[ext_resource type="Texture2D" uid="uid://bhn0ohrkr3c0u" path="res://env models/plants/grass/textures/fern_normal.jpg" id="4_34tv1"]
+[ext_resource type="Texture2D" uid="uid://rk82xb5tw6ud" path="res://env models/plants/grass/textures/fern_roughness.jpg" id="5_8gb8u"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_v8scw"]
+render_priority = 0
+shader = ExtResource("2_y3nfh")
+shader_parameter/albedo = Color(0.61960787, 0.5923991, 0.11048913, 1)
+shader_parameter/texture_albedo = ExtResource("3_kraxt")
+shader_parameter/roughness = 1.0
+shader_parameter/metallic_texture_channel = Vector4(1, 0, 0, 0)
+shader_parameter/texture_roughness = ExtResource("5_8gb8u")
+shader_parameter/metallic = 0.0
+shader_parameter/specular = 0.13
+shader_parameter/texture_normal = ExtResource("4_34tv1")
+shader_parameter/normal_scale = 1.5
+shader_parameter/ao_strength = 1.0
+shader_parameter/backlight = Color(0, 0, 0, 1)
+shader_parameter/texture_backlight = ExtResource("3_kraxt")
+shader_parameter/uv_scale = Vector2(1, 1)
+shader_parameter/uv_offset = Vector2(0, 0)
+shader_parameter/wind_speed = 0.1
+shader_parameter/wind_strength = 0.10000000475
+shader_parameter/wind_frequency = 0.10000000475
+shader_parameter/wind_detail = 0.10000000475
+shader_parameter/wind_direction = Vector2(1, 0)
+shader_parameter/vertex_mask_strength = 1.0
+shader_parameter/directional_strength = 1.0
+
+[node name="grass4" unique_id=1344171924 instance=ExtResource("1_nw1hp")]
+
+[node name="Plant_002" parent="." index="0" unique_id=1408608603]
+surface_material_override/0 = SubResource("ShaderMaterial_v8scw")

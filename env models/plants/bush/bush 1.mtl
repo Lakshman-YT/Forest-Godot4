@@ -1,0 +1,24 @@
+# Blender 5.1.2 MTL File: 'plants.blend'
+# www.blender.org
+
+newmtl Bark_mat
+Ka 1.000000 1.000000 1.000000
+Kd 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+map_Ns D:/assets/extracted/liliac/source/Lilac_bark_roughness_2k.png
+map_Bump -bm 1.000000 D:/assets/extracted/liliac/source/Lilac_bark_normal_2k.png
+
+newmtl Brunches_mat
+Ka 1.000000 1.000000 1.000000
+Kd 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+illum 2
+map_Ns D:/assets/extracted/liliac/source/Textures cards/lilac_cards_Roughness.png
+map_d D:/assets/extracted/liliac/source/Textures cards/lilac_cards_Opacity.png
+map_Bump -bm 1.000000 D:/assets/extracted/liliac/source/Textures cards/lilac_cards_Normal.png

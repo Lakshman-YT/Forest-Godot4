@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://cablm6hxx6tpt"]
+
+[ext_resource type="ArrayMesh" uid="uid://dn1t1mgi3chj7" path="res://env models/plants/grass/grass main1.obj" id="1_vct40"]
+[ext_resource type="Texture2D" uid="uid://dr30hfdv0d6lh" path="res://env models/plants/grass/textures/mygrass2k_color2-mygrass2k_alpha2.png" id="2_7vq06"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_vct40"]
+transparency = 4
+cull_mode = 2
+shading_mode = 0
+albedo_color = Color(1.135572, 1.2363764, 0.8427593, 1)
+albedo_texture = ExtResource("2_7vq06")
+
+[node name="MeshInstance3D" type="MeshInstance3D" unique_id=1874864799]
+mesh = ExtResource("1_vct40")
+surface_material_override/0 = SubResource("StandardMaterial3D_vct40")

@@ -1,0 +1,52 @@
+[gd_scene format=3 uid="uid://besmdopgbsjn5"]
+
+[ext_resource type="PackedScene" uid="uid://c44odjb0rycj7" path="res://env models/plants/tree/pine1.gltf" id="1_co4o8"]
+[ext_resource type="Shader" uid="uid://dajf5q4rfgurh" path="res://env models/plants/tree/materials/shader/tree_shader.gdshader" id="2_5qvmy"]
+[ext_resource type="Material" uid="uid://bbq3wxa6fmaf5" path="res://env models/plants/tree/materials/pine_leaf_material.res" id="3_cwx03"]
+[ext_resource type="Texture2D" uid="uid://dr40no80mnr6" path="res://env models/plants/tree/textures/pine_bark_base.jpg" id="3_wmv2i"]
+[ext_resource type="Texture2D" uid="uid://cyp6ff2k22g3m" path="res://env models/plants/tree/textures/pine_bark_ao.jpg" id="4_pt70d"]
+[ext_resource type="Texture2D" uid="uid://cggi1s2lctn5q" path="res://env models/plants/tree/textures/pine_bark_normal.jpg" id="5_3a1tm"]
+[ext_resource type="Texture2D" uid="uid://bmv23ucm2uy1e" path="res://env models/plants/tree/textures/pine_bark_roughness.jpg" id="6_1hkvw"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_d557c"]
+render_priority = 0
+shader = ExtResource("2_5qvmy")
+shader_parameter/albedo = Color(0.696875, 0.696875, 0.696875, 1)
+shader_parameter/texture_albedo = ExtResource("3_wmv2i")
+shader_parameter/roughness = 1.0
+shader_parameter/metallic_texture_channel = Vector4(1, 0, 0, 0)
+shader_parameter/texture_roughness = ExtResource("6_1hkvw")
+shader_parameter/metallic = 0.0
+shader_parameter/specular = 0.13
+shader_parameter/texture_normal = ExtResource("5_3a1tm")
+shader_parameter/normal_scale = 1.5
+shader_parameter/texture_ao = ExtResource("4_pt70d")
+shader_parameter/ao_strength = 1.0
+shader_parameter/backlight = Color(0, 0, 0, 1)
+shader_parameter/texture_backlight = ExtResource("3_wmv2i")
+shader_parameter/uv_scale = Vector2(1, 1)
+shader_parameter/uv_offset = Vector2(0, 0)
+shader_parameter/wind_speed = 0.5
+shader_parameter/wind_strength = 0.10000000475
+shader_parameter/wind_frequency = 2.000000095
+shader_parameter/wind_detail = 0.2000000095
+shader_parameter/wind_direction = Vector2(1, 0)
+shader_parameter/vertex_mask_strength = 1.0
+shader_parameter/directional_strength = 0.5
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_cwx03"]
+size = Vector3(1, 4.9887695, 0.7684326)
+
+[node name="pine1" unique_id=231142976 instance=ExtResource("1_co4o8")]
+
+[node name="Pine_large_3_LOD0" parent="." index="0" unique_id=427387605]
+surface_material_override/0 = SubResource("ShaderMaterial_d557c")
+surface_material_override/1 = ExtResource("3_cwx03")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="." index="1" unique_id=1978761781]
+collision_layer = 2
+collision_mask = 0
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D" index="0" unique_id=1369881071]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.9943848, 0.050231934)
+shape = SubResource("BoxShape3D_cwx03")

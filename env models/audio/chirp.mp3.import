@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://dlscn7dcgl7ps"
+path="res://.godot/imported/chirp.mp3-a77b760890612a5c05f1a90bd9035332.mp3str"
+
+[deps]
+
+source_file="res://env models/audio/chirp.mp3"
+dest_files=["res://.godot/imported/chirp.mp3-a77b760890612a5c05f1a90bd9035332.mp3str"]
+
+[params]
+
+loop=true
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

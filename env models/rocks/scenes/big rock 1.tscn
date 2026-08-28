@@ -1,0 +1,19 @@
+[gd_scene format=3 uid="uid://dvgbsrwng2f1f"]
+
+[ext_resource type="ArrayMesh" uid="uid://kb1bgug70abu" path="res://env models/rocks/big rocks/rock.obj" id="1_uckxo"]
+[ext_resource type="Material" uid="uid://bauwwqa5uyt12" path="res://env models/rocks/rock 2.tres" id="2_uckxo"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_uckxo"]
+size = Vector3(3.3925781, 1.1896973, 1.8378906)
+
+[node name="MeshInstance3D" type="MeshInstance3D" unique_id=854267080]
+transform = Transform3D(2.9057107, 0.30223006, -0.6822783, -0.74622154, 1.176853, -2.6567218, 8.940697e-08, 2.7429318, 1.2150415, 0, 0, 0)
+mesh = ExtResource("1_uckxo")
+surface_material_override/0 = ExtResource("2_uckxo")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="." unique_id=1150750566]
+collision_layer = 2
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D" unique_id=463644814]
+transform = Transform3D(0.9999994, 1.4901161e-08, -2.682209e-07, 1.4405741e-06, 1, 5.364418e-07, -4.862426e-08, 0, 0.9999995, 0, 0, 0)
+shape = SubResource("BoxShape3D_uckxo")

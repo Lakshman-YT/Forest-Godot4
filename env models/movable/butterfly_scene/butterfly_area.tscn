@@ -1,0 +1,52 @@
+[gd_scene format=3 uid="uid://bpkj5mqenfpw0"]
+
+[ext_resource type="Script" uid="uid://bjoxf3cuevuvk" path="res://env models/movable/script/butterfly_area.gd" id="1_sxjdl"]
+[ext_resource type="PackedScene" uid="uid://dmr3ndks5pahe" path="res://env models/movable/butterfly_scene/butterfly_path.tscn" id="2_avrrb"]
+[ext_resource type="Curve3D" uid="uid://4ur4mkaav8jc" path="res://env models/movable/butterfly_scene/path/path1.res" id="3_f28u5"]
+[ext_resource type="Curve3D" uid="uid://dgr7p8keugfv6" path="res://env models/movable/butterfly_scene/path/path3.tres" id="4_8pcsn"]
+[ext_resource type="Curve3D" uid="uid://cljtqnix5kjpk" path="res://env models/movable/butterfly_scene/path/path4.tres" id="5_ufrlp"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_nx736"]
+size = Vector3(18.637695, 12.707153, 16.889038)
+
+[node name="Area3D" type="Area3D" unique_id=388163194]
+transform = Transform3D(0.76021326, 0, -0.64967364, 0, 1, 0, 0.64967364, 0, 0.76021326, 0, 0, 0)
+script = ExtResource("1_sxjdl")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=261950340]
+shape = SubResource("BoxShape3D_nx736")
+
+[node name="Path3D" parent="." unique_id=1003852385 instance=ExtResource("2_avrrb")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.7714577, 0, -4.7274475)
+
+[node name="Path3D5" parent="." unique_id=281033702 instance=ExtResource("2_avrrb")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.6707671, 0, -0.9549567)
+
+[node name="Path3D2" parent="." unique_id=1432811428 instance=ExtResource("2_avrrb")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.9976335, 0, 4.1288433)
+curve = ExtResource("3_f28u5")
+
+[node name="PathFollow3D" parent="Path3D2" index="0" unique_id=1183801682]
+transform = Transform3D(0.6366781, -0.35338295, -0.68538547, -1.4901103e-08, 0.8888096, -0.45826763, 0.7711246, 0.2917702, 0.5658877, -2.2992055, 0.6828178, 0)
+
+[node name="Path3D3" parent="." unique_id=226335466 instance=ExtResource("2_avrrb")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.533514, 0, 3.4696047)
+curve = ExtResource("4_8pcsn")
+
+[node name="PathFollow3D" parent="Path3D3" index="0" unique_id=1183801682]
+transform = Transform3D(-0.84862465, 0.07732929, -0.5233054, -1.1175824e-08, 0.9892537, 0.14618285, 0.52898806, 0.12405487, -0.83950835, 2.098794, 0, -2.6734638)
+
+[node name="Path3D4" parent="." unique_id=1639280306 instance=ExtResource("2_avrrb")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.4899435, 0, -4.1686506)
+curve = ExtResource("5_ufrlp")
+
+[node name="PathFollow3D" parent="Path3D4" index="0" unique_id=1183801682]
+transform = Transform3D(-0.9997528, 0.006488846, 0.02107894, 0, 0.9557369, -0.29420948, -0.022055093, -0.29413807, -0.95550394, 2.8983345, 0, -2.6068356)
+
+[connection signal="body_shape_entered" from="." to="." method="_on_body_shape_entered"]
+
+[editable path="Path3D"]
+[editable path="Path3D5"]
+[editable path="Path3D2"]
+[editable path="Path3D3"]
+[editable path="Path3D4"]

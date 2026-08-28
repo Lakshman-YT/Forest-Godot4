@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://djnb0tj8wfxx5"
+path="res://.godot/imported/air + chirp.mp3-6c40da0d1b9fdc4e164b6dbb9cc753fb.mp3str"
+
+[deps]
+
+source_file="res://env models/audio/air + chirp.mp3"
+dest_files=["res://.godot/imported/air + chirp.mp3-6c40da0d1b9fdc4e164b6dbb9cc753fb.mp3str"]
+
+[params]
+
+loop=true
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

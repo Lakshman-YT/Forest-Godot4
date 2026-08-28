@@ -1,0 +1,11 @@
+[gd_scene format=3 uid="uid://b5u4q618d751j"]
+
+[ext_resource type="PackedScene" uid="uid://dg3w148qq18h7" path="res://env models/plants/bush/bush2.gltf" id="1_vn8h5"]
+[ext_resource type="Material" uid="uid://chbnbugrmwdxo" path="res://env models/plants/bush/materials/bush_bark_material.res" id="2_wvlp5"]
+[ext_resource type="Material" uid="uid://1hr4rnj4ev5n" path="res://env models/plants/bush/materials/bush_leaf_material.res" id="3_acukv"]
+
+[node name="bush2" unique_id=299699280 instance=ExtResource("1_vn8h5")]
+
+[node name="Lilac_small_bush_3_LOD0" parent="." index="0" unique_id=115316728]
+surface_material_override/0 = ExtResource("2_wvlp5")
+surface_material_override/1 = ExtResource("3_acukv")

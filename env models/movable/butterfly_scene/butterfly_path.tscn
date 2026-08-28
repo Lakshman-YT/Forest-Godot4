@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://dmr3ndks5pahe"]
+
+[ext_resource type="Script" uid="uid://blfb3ihi6edd2" path="res://env models/movable/script/butterfly_path.gd" id="1_xw5vx"]
+[ext_resource type="Curve3D" uid="uid://4ur4mkaav8jc" path="res://env models/movable/butterfly_scene/path/path1.res" id="2_igm8o"]
+[ext_resource type="Curve3D" uid="uid://i70uk83tallh" path="res://env models/movable/butterfly_scene/path/path2.tres" id="3_5jl80"]
+[ext_resource type="Curve3D" uid="uid://dgr7p8keugfv6" path="res://env models/movable/butterfly_scene/path/path3.tres" id="4_ldonv"]
+[ext_resource type="Curve3D" uid="uid://cljtqnix5kjpk" path="res://env models/movable/butterfly_scene/path/path4.tres" id="5_bawya"]
+
+[node name="Path3D" type="Path3D" unique_id=1003852385]
+curve = ExtResource("5_bawya")
+script = ExtResource("1_xw5vx")
+paths = Array[Resource]([ExtResource("2_igm8o"), ExtResource("3_5jl80"), ExtResource("4_ldonv"), ExtResource("5_bawya")])
+
+[node name="PathFollow3D" type="PathFollow3D" parent="." unique_id=1183801682]
+transform = Transform3D(0.9997528, 0.006488846, -0.02107895, 0, 0.9557369, 0.29420963, 0.022055093, -0.29413807, 0.9555044, 2.8983345, 0, -2.6068356)
+use_model_front = true

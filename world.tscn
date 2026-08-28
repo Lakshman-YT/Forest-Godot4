@@ -1,0 +1,749 @@
+[gd_scene format=3 uid="uid://d2ldvpmxfxrty"]
+
+[ext_resource type="Texture2D" uid="uid://djyuk2urqr8cc" path="res://terrain mat/ground text/rock-packed_albedo_height.png" id="1_036b0"]
+[ext_resource type="Texture2D" uid="uid://bi5mmiynup6sk" path="res://terrain mat/ground text/rock-packed_normal_roughness.png" id="2_dwbse"]
+[ext_resource type="PackedScene" uid="uid://besmdopgbsjn5" path="res://env models/plants/tree/scene/pine_1.tscn" id="2_jjr1n"]
+[ext_resource type="PackedScene" uid="uid://25aji3ru8squ" path="res://env models/plants/tree/scene/pine_2.tscn" id="3_gggvi"]
+[ext_resource type="Texture2D" uid="uid://b30utx3psod1w" path="res://terrain mat/ground text/packed_albedo_height.png" id="3_pkg7o"]
+[ext_resource type="Texture2D" uid="uid://c3olmrm1hew7q" path="res://terrain mat/ground text/packed_normal.png" id="4_gbfbk"]
+[ext_resource type="PackedScene" uid="uid://tb3hpuwv8no0" path="res://env models/plants/tree/scene/pine_3.tscn" id="4_w44yn"]
+[ext_resource type="PackedScene" uid="uid://rn1tbn2887uy" path="res://env models/plants/grass/scenes/grass main.tscn" id="5_gggvi"]
+[ext_resource type="Texture2D" uid="uid://cbtyl505sprv7" path="res://terrain mat/ground text/path-packed_albedo_height.png" id="5_wse8f"]
+[ext_resource type="Shader" uid="uid://whteqsleuo8v" path="res://terrain mat/water/watershader.gdshader" id="6_gbfbk"]
+[ext_resource type="Texture2D" uid="uid://daty70bq535un" path="res://terrain mat/ground text/path-packed_normal_roughness.png" id="6_ic0uy"]
+[ext_resource type="PackedScene" uid="uid://cablm6hxx6tpt" path="res://env models/plants/grass/scenes/main grass 1.tscn" id="6_w44yn"]
+[ext_resource type="Texture2D" uid="uid://dotmx0aur6c7w" path="res://terrain mat/water/foam.jpg" id="7_ioo17"]
+[ext_resource type="PackedScene" uid="uid://cilc2by5f6ecb" path="res://env models/plants/tree/scene/maple_1.tscn" id="7_my276"]
+[ext_resource type="Texture2D" uid="uid://dugh1kl44bvrc" path="res://terrain mat/water/water_normal.jpg" id="8_wse8f"]
+[ext_resource type="PackedScene" uid="uid://bnahflp2ocmw" path="res://env models/rocks/scenes/big rock 3.tscn" id="8_wukud"]
+[ext_resource type="PackedScene" uid="uid://ct8i7w0sjgg4f" path="res://env models/plants/tree/scene/maple_2.tscn" id="8_yx0jh"]
+[ext_resource type="PackedScene" uid="uid://dkb2214twtumf" path="res://env models/plants/tree/scene/maple_3.tscn" id="9_1ew0l"]
+[ext_resource type="PackedScene" uid="uid://coqwmu5ocqx0a" path="res://env models/rocks/complex scenes/arch.tscn" id="10_il2jm"]
+[ext_resource type="PackedScene" uid="uid://c8q4jgs5geq6s" path="res://env models/plants/grass/scenes/grass_1.tscn" id="10_jas3d"]
+[ext_resource type="PackedScene" uid="uid://djksekm3qwkdb" path="res://env models/plants/grass/scenes/grass_2.tscn" id="11_7htu6"]
+[ext_resource type="Shader" uid="uid://cvd0x7lon1ur6" path="res://addons/sky_3d/shaders/SkyMaterial.gdshader" id="11_26xuy"]
+[ext_resource type="PackedScene" uid="uid://cs5g0uohl0ru4" path="res://env models/rocks/scenes/big rock 4.tscn" id="11_wjb0r"]
+[ext_resource type="PackedScene" uid="uid://nyrcl5y85ob3" path="res://env models/plants/grass/scenes/grass_3.tscn" id="12_7qk3m"]
+[ext_resource type="Texture2D" uid="uid://cfqk60lpl5ljv" path="res://addons/sky_3d/assets/resources/SNoise.tres" id="12_bc84e"]
+[ext_resource type="PackedScene" uid="uid://su6xvw0p4vgv" path="res://env models/rocks/complex scenes/scene2.tscn" id="12_mc2jv"]
+[ext_resource type="PackedScene" uid="uid://cxe1dw3tqqf54" path="res://env models/rocks/complex scenes/arc2.tscn" id="13_bo7i5"]
+[ext_resource type="PackedScene" uid="uid://0f41iahap7f4" path="res://env models/plants/grass/scenes/grass_4.tscn" id="13_jas3d"]
+[ext_resource type="Texture2D" uid="uid://cecwdqjol0ckd" path="res://addons/sky_3d/assets/textures/noiseClouds.png" id="13_wukud"]
+[ext_resource type="PackedScene" uid="uid://bp3y1df4sdgnp" path="res://env models/rocks/scenes/small rock 2.tscn" id="14_4h6ng"]
+[ext_resource type="Texture2D" uid="uid://2r8ylu6rg5dp" path="res://addons/sky_3d/assets/thirdparty/textures/moon/MoonMap.png" id="14_il2jm"]
+[ext_resource type="PackedScene" uid="uid://brqhyjg4a6g3m" path="res://env models/plants/grass/scenes/grass_5.tscn" id="14_jas3d"]
+[ext_resource type="PackedScene" uid="uid://b1pr48fvy0dxl" path="res://env models/plants/bush/scenes/bush_1.tscn" id="15_7htu6"]
+[ext_resource type="PackedScene" uid="uid://60wslfi3lmji" path="res://env models/rocks/scenes/small rock 4.tscn" id="15_k83mh"]
+[ext_resource type="PackedScene" uid="uid://dojq37i1arpbd" path="res://env models/rocks/main model.tscn" id="15_o3ebs"]
+[ext_resource type="Texture2D" uid="uid://djpfuyxkryegn" path="res://addons/sky_3d/assets/textures/noise.jpg" id="15_wjb0r"]
+[ext_resource type="Texture2D" uid="uid://bm7dot7t7u1q4" path="res://addons/sky_3d/assets/thirdparty/textures/milkyway/StarField.jpg" id="16_mc2jv"]
+[ext_resource type="PackedScene" uid="uid://b5u4q618d751j" path="res://env models/plants/bush/scenes/bush_2.tscn" id="16_ruyqm"]
+[ext_resource type="Texture2D" uid="uid://c1vwcdcdvb74a" path="res://addons/sky_3d/assets/thirdparty/textures/milkyway/Milkyway.jpg" id="17_bo7i5"]
+[ext_resource type="PackedScene" uid="uid://bembqp836mcmg" path="res://env models/plants/bush/scenes/bush_3.tscn" id="17_fnoqa"]
+[ext_resource type="Script" uid="uid://deo0gxkmk2ahd" path="res://addons/sky_3d/src/Sky3D.gd" id="18_4h6ng"]
+[ext_resource type="PackedScene" uid="uid://p558ch38ea0v" path="res://env models/plants/bush/scenes/bush_4.tscn" id="18_nx736"]
+[ext_resource type="PackedScene" uid="uid://bl836ehjehdml" path="res://env models/rocks/scenes/small rock 1.tscn" id="19_fnoqa"]
+[ext_resource type="Script" uid="uid://b4tkplvh7fq40" path="res://addons/sky_3d/src/SkyDome.gd" id="19_o3ebs"]
+[ext_resource type="Script" uid="uid://cjmkcj8hwm7ts" path="res://addons/sky_3d/src/TimeOfDay.gd" id="20_k83mh"]
+[ext_resource type="PackedScene" uid="uid://bbhkjooho062c" path="res://env models/rocks/scenes/small rock 3.tscn" id="20_nx736"]
+[ext_resource type="PackedScene" uid="uid://dvgbsrwng2f1f" path="res://env models/rocks/scenes/big rock 1.tscn" id="21_bc84e"]
+[ext_resource type="AudioStream" uid="uid://dpqoshu5atxy1" path="res://env models/audio/river flow 1.mp3" id="36_f3o6s"]
+[ext_resource type="AudioStream" uid="uid://crg5wd4kpg3j1" path="res://env models/audio/river flow 2.mp3" id="37_w4lh7"]
+[ext_resource type="AudioStream" uid="uid://coomir52j1tj1" path="res://env models/audio/air 2.mp3" id="38_olr1q"]
+[ext_resource type="AudioStream" uid="uid://dcubyq78dk5sb" path="res://env models/audio/air.mp3" id="39_q42o5"]
+[ext_resource type="AudioStream" uid="uid://djnb0tj8wfxx5" path="res://env models/audio/air + chirp.mp3" id="40_iett8"]
+[ext_resource type="AudioStream" uid="uid://dlscn7dcgl7ps" path="res://env models/audio/chirp.mp3" id="41_r5m4j"]
+[ext_resource type="AudioStream" uid="uid://ctdw3tmpsya52" path="res://env models/audio/chirp (2).mp3" id="42_e77ka"]
+[ext_resource type="AudioStream" uid="uid://b5jr7eehkdf0w" path="res://env models/audio/chirp (3).mp3" id="43_c0wax"]
+[ext_resource type="PackedScene" uid="uid://bpkj5mqenfpw0" path="res://env models/movable/butterfly_scene/butterfly_area.tscn" id="49_55kwu"]
+[ext_resource type="PackedScene" uid="uid://dd6v46w7lb8o8" path="res://terrain mat/scenes/lens_flare.tscn" id="57_sedwk"]
+[ext_resource type="PackedScene" uid="uid://cqe8jd0vjbvfo" path="res://character/player.tscn" id="59_e77ka"]
+[ext_resource type="PackedScene" uid="uid://dvracmssmoc1r" path="res://env models/bridge/bridge.tscn" id="60_c0wax"]
+[ext_resource type="Script" uid="uid://ck6hv62tpqc8r" path="res://character/stats.gd" id="60_sedwk"]
+[ext_resource type="Script" uid="uid://dn6yniv1lf16o" path="res://character/label_2.gd" id="61_sedwk"]
+
+[sub_resource type="Gradient" id="Gradient_gv5m4"]
+offsets = PackedFloat32Array(0.2, 1)
+colors = PackedColorArray(1, 1, 1, 1, 0, 0, 0, 1)
+
+[sub_resource type="FastNoiseLite" id="FastNoiseLite_f3sb7"]
+noise_type = 2
+frequency = 0.03
+cellular_jitter = 3.0
+cellular_return_type = 0
+domain_warp_enabled = true
+domain_warp_type = 1
+domain_warp_amplitude = 50.0
+domain_warp_fractal_type = 2
+domain_warp_fractal_lacunarity = 1.5
+domain_warp_fractal_gain = 1.0
+
+[sub_resource type="NoiseTexture2D" id="NoiseTexture2D_fj7yv"]
+noise = SubResource("FastNoiseLite_f3sb7")
+color_ramp = SubResource("Gradient_gv5m4")
+seamless = true
+
+[sub_resource type="Terrain3DMaterial" id="Terrain3DMaterial_tlwt5"]
+_shader_parameters = {
+&"auto_base_texture": 0,
+&"auto_height_reduction": 1.0,
+&"auto_overlay_texture": 1,
+&"auto_slope": 2.1850001037875,
+&"bias_distance": null,
+&"blend_sharpness": 0.06400000304,
+&"depth_blur": null,
+&"dual_scale_far": null,
+&"dual_scale_near": 100.0,
+&"dual_scale_reduction": null,
+&"dual_scale_texture": null,
+&"enable_macro_variation": null,
+&"enable_projection": null,
+&"flat_terrain_normals": null,
+&"macro_variation1": Color(0.9635565, 0.9811929, 1, 1),
+&"macro_variation2": Color(0.963361, 1, 0.7805369, 1),
+&"macro_variation_slope": 0.333,
+&"mipmap_bias": 1.0,
+&"noise1_angle": null,
+&"noise1_offset": null,
+&"noise1_scale": null,
+&"noise2_scale": null,
+&"noise_texture": SubResource("NoiseTexture2D_fj7yv"),
+&"projection_threshold": null,
+&"tri_scale_reduction": null
+}
+world_background = 0
+auto_shader = true
+dual_scaling = true
+
+[sub_resource type="Terrain3DMeshAsset" id="Terrain3DMeshAsset_gggvi"]
+name = "pine_1"
+scene_file = ExtResource("2_jjr1n")
+density = 0.01
+last_lod = 0
+last_shadow_lod = 0
+lod0_range = 128.0
+
+[sub_resource type="Terrain3DMeshAsset" id="Terrain3DMeshAsset_6ah6f"]
+name = "pine_2"
+id = 1
+scene_file = ExtResource("3_gggvi")
+density = 0.01
+last_lod = 0
+last_shadow_lod = 0
+lod0_range = 128.0
+
+[sub_resource type="Terrain3DMeshAsset" id="Terrain3DMeshAsset_g1i3r"]
+name = "pine_3"
+id = 2
+scene_file = ExtResource("4_w44yn")
+density = 0.01
+last_lod = 0
+last_shadow_lod = 0
+lod0_range = 128.0
+
+[sub_resource type="Terrain3DMeshAsset" id="Terrain3DMeshAsset_w44yn"]
+name = "grass main"
+id = 3
+scene_file = ExtResource("5_gggvi")
+density = 4.692052
+last_lod = 0
+last_shadow_lod = 0
+lod0_range = 128.0
+
+[sub_resource type="Terrain3DMeshAsset" id="Terrain3DMeshAsset_my276"]
+name = "main grass 1"
+id = 4
+scene_file = ExtResource("6_w44yn")
+last_lod = 0
+last_shadow_lod = 0
+lod0_range = 128.0
+
+[sub_resource type="Terrain3DMeshAsset" id="Terrain3DMeshAsset_ryup7"]
+name = "maple_1"
+id = 5
+scene_file = ExtResource("7_my276")
+density = 0.01
+last_lod = 0
+last_shadow_lod = 0
+lod0_range = 128.0
+
+[sub_resource type="Terrain3DMeshAsset" id="Terrain3DMeshAsset_ytpkv"]
+name = "maple_2"
+id = 6
+scene_file = ExtResource("8_yx0jh")
+density = 0.01
+last_lod = 0
+last_shadow_lod = 0
+lod0_range = 128.0
+
+[sub_resource type="Terrain3DMeshAsset" id="Terrain3DMeshAsset_jas3d"]
+name = "maple_3"
+id = 7
+scene_file = ExtResource("9_1ew0l")
+density = 0.01
+last_lod = 0
+last_shadow_lod = 0
+lod0_range = 128.0
+
+[sub_resource type="Terrain3DMeshAsset" id="Terrain3DMeshAsset_yx0jh"]
+name = "grass_1"
+id = 8
+scene_file = ExtResource("10_jas3d")
+density = 5.0203624
+last_lod = 0
+last_shadow_lod = 0
+lod0_range = 128.0
+
+[sub_resource type="Terrain3DMeshAsset" id="Terrain3DMeshAsset_7htu6"]
+name = "grass_2"
+id = 9
+scene_file = ExtResource("11_7htu6")
+density = 2.6082437
+last_lod = 0
+last_shadow_lod = 0
+lod0_range = 128.0
+
+[sub_resource type="Terrain3DMeshAsset" id="Terrain3DMeshAsset_7qk3m"]
+name = "grass_3"
+id = 10
+scene_file = ExtResource("12_7qk3m")
+density = 1.5472248
+last_lod = 0
+last_shadow_lod = 0
+lod0_range = 128.0
+
+[sub_resource type="Terrain3DMeshAsset" id="Terrain3DMeshAsset_xpnt2"]
+name = "grass_4"
+id = 11
+scene_file = ExtResource("13_jas3d")
+density = 9.860744
+last_lod = 0
+last_shadow_lod = 0
+lod0_range = 128.0
+
+[sub_resource type="Terrain3DMeshAsset" id="Terrain3DMeshAsset_ruyqm"]
+name = "grass_5"
+id = 12
+scene_file = ExtResource("14_jas3d")
+density = 8.137776
+last_lod = 0
+last_shadow_lod = 0
+lod0_range = 128.0
+
+[sub_resource type="Terrain3DMeshAsset" id="Terrain3DMeshAsset_fnoqa"]
+name = "bush_1"
+id = 13
+scene_file = ExtResource("15_7htu6")
+density = 1.1115015
+last_lod = 0
+last_shadow_lod = 0
+lod0_range = 128.0
+
+[sub_resource type="Terrain3DMeshAsset" id="Terrain3DMeshAsset_55kwu"]
+name = "bush_2"
+id = 14
+scene_file = ExtResource("16_ruyqm")
+density = 0.35645825
+last_lod = 0
+last_shadow_lod = 0
+lod0_range = 128.0
+
+[sub_resource type="Terrain3DMeshAsset" id="Terrain3DMeshAsset_f3o6s"]
+name = "bush_3"
+id = 15
+scene_file = ExtResource("17_fnoqa")
+density = 0.9990582
+last_lod = 0
+last_shadow_lod = 0
+lod0_range = 128.0
+
+[sub_resource type="Terrain3DMeshAsset" id="Terrain3DMeshAsset_w4lh7"]
+name = "bush_4"
+id = 16
+scene_file = ExtResource("18_nx736")
+density = 3.775064
+last_lod = 0
+last_shadow_lod = 0
+lod0_range = 128.0
+
+[sub_resource type="Terrain3DMeshAsset" id="Terrain3DMeshAsset_nx736"]
+name = "small rock 1"
+id = 17
+scene_file = ExtResource("19_fnoqa")
+density = 0.5438387
+last_lod = 0
+last_shadow_lod = 0
+lod0_range = 128.0
+
+[sub_resource type="Terrain3DMeshAsset" id="Terrain3DMeshAsset_k3lar"]
+name = "small rock 3"
+id = 18
+scene_file = ExtResource("20_nx736")
+density = 0.5832119
+last_lod = 0
+last_shadow_lod = 0
+lod0_range = 128.0
+
+[sub_resource type="Terrain3DTextureAsset" id="Terrain3DTextureAsset_ioo17"]
+name = "rock-packed_albedo_height"
+albedo_color = Color(0.9070871, 0.9695651, 1, 1)
+albedo_texture = ExtResource("1_036b0")
+normal_texture = ExtResource("2_dwbse")
+uv_scale = 0.695
+detiling_rotation = 0.44
+detiling_shift = 0.312
+
+[sub_resource type="Terrain3DTextureAsset" id="Terrain3DTextureAsset_wse8f"]
+name = "packed_albedo_height"
+id = 1
+albedo_color = Color(1, 0.9935026, 0.7866744, 1)
+albedo_texture = ExtResource("3_pkg7o")
+normal_texture = ExtResource("4_gbfbk")
+uv_scale = 1.5
+detiling_rotation = 0.183
+detiling_shift = 0.284
+
+[sub_resource type="Terrain3DTextureAsset" id="Terrain3DTextureAsset_k3n1d"]
+name = "path-packed_albedo_height"
+id = 2
+albedo_texture = ExtResource("5_wse8f")
+normal_texture = ExtResource("6_ic0uy")
+uv_scale = 1.0
+detiling_rotation = 0.435
+detiling_shift = 0.45
+
+[sub_resource type="Terrain3DAssets" id="Terrain3DAssets_dwbse"]
+mesh_list = Array[Terrain3DMeshAsset]([SubResource("Terrain3DMeshAsset_gggvi"), SubResource("Terrain3DMeshAsset_6ah6f"), SubResource("Terrain3DMeshAsset_g1i3r"), SubResource("Terrain3DMeshAsset_w44yn"), SubResource("Terrain3DMeshAsset_my276"), SubResource("Terrain3DMeshAsset_ryup7"), SubResource("Terrain3DMeshAsset_ytpkv"), SubResource("Terrain3DMeshAsset_jas3d"), SubResource("Terrain3DMeshAsset_yx0jh"), SubResource("Terrain3DMeshAsset_7htu6"), SubResource("Terrain3DMeshAsset_7qk3m"), SubResource("Terrain3DMeshAsset_xpnt2"), SubResource("Terrain3DMeshAsset_ruyqm"), SubResource("Terrain3DMeshAsset_fnoqa"), SubResource("Terrain3DMeshAsset_55kwu"), SubResource("Terrain3DMeshAsset_f3o6s"), SubResource("Terrain3DMeshAsset_w4lh7"), SubResource("Terrain3DMeshAsset_nx736"), SubResource("Terrain3DMeshAsset_k3lar")])
+texture_list = Array[Terrain3DTextureAsset]([SubResource("Terrain3DTextureAsset_ioo17"), SubResource("Terrain3DTextureAsset_wse8f"), SubResource("Terrain3DTextureAsset_k3n1d")])
+
+[sub_resource type="ArrayOccluder3D" id="ArrayOccluder3D_55kwu"]
+vertices = PackedVector3Array(16, 26.065792, 16, 32, 1.0012298, 32, 16, 1.0005525, 32, 32, 28.357176, 16, 48, 1.1572955, 32, 48, 22.414513, 16, 64, 5.0660067, 32, 64, 21.020603, 16, 80, 10.129321, 32, 80, 21.020638, 16, 96, 10.142908, 32, 96, 20.579023, 16, 112, 10.268758, 32, 112, 20.551489, 16, 128, 10.73102, 32, 128, 21.037973, 16, 144, 11.015332, 32, 144, 20.221504, 16, 160, 11.39369, 32, 160, 21.276905, 16, 176, 10.697657, 32, 176, 22.92423, 16, 192, 10.684845, 32, 192, 22.272728, 16, 208, 10.794313, 32, 208, 23.643652, 16, 224, 10.64411, 32, 224, 25.289421, 16, 240, 13.914191, 32, 240, 24.784286, 16, 256, 13.914191, 32, 256, 24.784286, 16, 32, 1.0000378, 48, 16, 1.0005947, 48, 48, 1.0020969, 48, 64, 1.0715998, 48, 80, 1.2215661, 48, 96, 8.410705, 48, 112, 9.191151, 48, 128, 9.6591215, 48, 144, 9.879747, 48, 160, 10.004884, 48, 176, 10.003044, 48, 192, 10.017085, 48, 208, 10.147967, 48, 224, 1.2947578, 48, 240, 1.3391918, 48, 256, 1.3391918, 48, 32, 11.663735, 64, 16, 21.345156, 64, 48, 10.0578985, 64, 64, 1.1918064, 64, 80, 1.2367748, 64, 96, 1.406665, 64, 112, 1.8258572, 64, 128, 2.8499825, 64, 144, 3.0771694, 64, 160, 2.4919264, 64, 176, 1.0068288, 64, 192, 1.0025234, 64, 208, 1.0328277, 64, 224, 1.2704425, 64, 240, 1.4032087, 64, 256, 1.4032087, 64, 32, 11.23745, 80, 16, 20.488264, 80, 48, 10.490096, 80, 64, 10.325757, 80, 80, 2.045335, 80, 96, 1.4454397, 80, 112, 1.6217979, 80, 128, 1.7970127, 80, 144, 1.48456, 80, 160, 1.4938972, 80, 176, 1.0085337, 80, 192, 1.0556033, 80, 208, 7.031712, 80, 224, 11.97268, 80, 240, 21.753036, 80, 256, 21.753036, 80, 32, 11.427082, 96, 16, 19.409954, 96, 48, 10.771964, 96, 64, 10.538095, 96, 80, 9.995473, 96, 96, 9.702786, 96, 112, 9.828769, 96, 128, 10.319049, 96, 144, 3.3874137, 96, 160, 2.3909793, 96, 176, 2.9048724, 96, 192, 8.51728, 96, 208, 10.685163, 96, 224, 11.810248, 96, 240, 20.395376, 96, 256, 20.395376, 96, 32, 10.900722, 112, 16, 15.046307, 112, 48, 10.748388, 112, 64, 10.223792, 112, 80, 10.141403, 112, 96, 9.841886, 112, 112, 9.095241, 112, 128, 2.5875406, 112, 144, 2.5572553, 112, 160, 2.7055244, 112, 176, 8.34601, 112, 192, 10.326271, 112, 208, 11.879639, 112, 224, 12.217254, 112, 240, 19.948395, 112, 256, 19.948395, 112, 32, 10.745142, 128, 16, 14.886068, 128, 48, 10.241828, 128, 64, 10.141752, 128, 80, 7.685098, 128, 96, 2.304025, 128, 112, 2.485613, 128, 128, 2.312371, 128, 144, 2.2544494, 128, 160, 5.7216873, 128, 176, 10.596493, 128, 192, 11.889688, 128, 208, 12.44465, 128, 224, 11.8989725, 128, 240, 17.638706, 128, 256, 17.638706, 128, 32, 10.815521, 144, 16, 17.469019, 144, 48, 9.654295, 144, 64, 3.7731004, 144, 80, 1.9417486, 144, 96, 2.2198105, 144, 112, 3.08224, 144, 128, 10.595358, 144, 144, 10.6921015, 144, 160, 10.691417, 144, 176, 11.244771, 144, 192, 12.306689, 144, 208, 11.212727, 144, 224, 11.165035, 144, 240, 13.614715, 144, 256, 13.614715, 144, 32, 3.4833684, 160, 16, 14.509277, 160, 48, 1.3214551, 160, 64, 1.616488, 160, 80, 1.7411846, 160, 96, 2.663024, 160, 112, 10.18408, 160, 128, 10.629915, 160, 144, 11.150856, 160, 160, 11.655314, 160, 176, 11.796939, 160, 192, 11.475944, 160, 208, 11.223742, 160, 224, 11.429264, 160, 240, 13.418682, 160, 256, 13.418682, 160, 32, 1.1643652, 176, 16, 1.5305336, 176, 48, 1.2704769, 176, 64, 1.9379281, 176, 80, 3.5536582, 176, 96, 9.662185, 176, 112, 10.250734, 176, 128, 11.036354, 176, 144, 11.996238, 176, 160, 11.775223, 176, 176, 11.571227, 176, 192, 11.32143, 176, 208, 11.07852, 176, 224, 11.234881, 176, 240, 18.895344, 176, 256, 18.895344, 176, 32, 1.1395739, 192, 16, 1.2930881, 192, 48, 10.379428, 192, 64, 10.077523, 192, 80, 10.334875, 192, 96, 10.61246, 192, 112, 10.939619, 192, 128, 11.156043, 192, 144, 11.077892, 192, 160, 10.901985, 192, 176, 10.947892, 192, 192, 10.925655, 192, 208, 11.274271, 192, 224, 11.732595, 192, 240, 21.882214, 192, 256, 21.882214, 192, 32, 1.1388377, 208, 16, 1.3208686, 208, 48, 7.5102487, 208, 64, 10.5806265, 208, 80, 11.071149, 208, 96, 11.134426, 208, 112, 11.105664, 208, 128, 11.105227, 208, 144, 10.901509, 208, 160, 10.768385, 208, 176, 11.085948, 208, 192, 11.483599, 208, 208, 11.891749, 208, 224, 14.522591, 208, 240, 25.742477, 208, 256, 25.742477, 208, 32, 2.14469, 224, 16, 1.186695, 224, 48, 10.765053, 224, 64, 10.732218, 224, 80, 11.10372, 224, 96, 11.125571, 224, 112, 10.812364, 224, 128, 10.422059, 224, 144, 10.559319, 224, 160, 10.730458, 224, 176, 11.302216, 224, 192, 11.802222, 224, 208, 13.053357, 224, 224, 17.510134, 224, 240, 21.764029, 224, 256, 21.764029, 224, 32, 19.286015, 240, 16, 8.0143385, 240, 48, 14.948457, 240, 64, 11.220627, 240, 80, 11.251355, 240, 96, 12.150922, 240, 112, 14.489367, 240, 128, 13.751757, 240, 144, 14.264526, 240, 160, 15.46192, 240, 176, 15.796621, 240, 192, 14.612499, 240, 208, 13.657474, 240, 224, 14.62616, 240, 240, 14.562928, 240, 256, 14.562928, 240, 32, 19.286015, 256, 16, 8.0143385, 256, 48, 14.948457, 256, 64, 11.220627, 256, 80, 11.251355, 256, 96, 12.150922, 256, 112, 14.489367, 256, 128, 13.751757, 256, 144, 14.264526, 256, 160, 15.46192, 256, 176, 15.796621, 256, 192, 14.612499, 256, 208, 13.657474, 256, 224, 14.62616, 256, 240, 14.562928, 256, 256, 14.562928, 256)
+indices = PackedInt32Array(0, 1, 2, 0, 3, 1, 2, 1, 32, 2, 32, 33, 3, 4, 1, 3, 5, 4, 1, 34, 32, 1, 4, 34, 33, 32, 48, 33, 48, 49, 32, 34, 50, 32, 50, 48, 5, 6, 4, 5, 7, 6, 4, 35, 34, 4, 6, 35, 34, 51, 50, 34, 35, 51, 7, 8, 6, 7, 9, 8, 6, 36, 35, 6, 8, 36, 35, 52, 51, 35, 36, 52, 9, 10, 8, 9, 11, 10, 8, 37, 36, 8, 10, 37, 36, 53, 52, 36, 37, 53, 11, 12, 10, 11, 13, 12, 10, 38, 37, 10, 12, 38, 37, 54, 53, 37, 38, 54, 13, 14, 12, 13, 15, 14, 12, 39, 38, 12, 14, 39, 38, 55, 54, 38, 39, 55, 15, 16, 14, 15, 17, 16, 14, 40, 39, 14, 16, 40, 39, 56, 55, 39, 40, 56, 17, 18, 16, 17, 19, 18, 16, 41, 40, 16, 18, 41, 40, 57, 56, 40, 41, 57, 19, 20, 18, 19, 21, 20, 18, 42, 41, 18, 20, 42, 41, 58, 57, 41, 42, 58, 21, 22, 20, 21, 23, 22, 20, 43, 42, 20, 22, 43, 42, 59, 58, 42, 43, 59, 23, 24, 22, 23, 25, 24, 22, 44, 43, 22, 24, 44, 43, 60, 59, 43, 44, 60, 25, 26, 24, 25, 27, 26, 24, 45, 44, 24, 26, 45, 44, 61, 60, 44, 45, 61, 27, 28, 26, 27, 29, 28, 29, 30, 28, 29, 31, 30, 28, 30, 47, 26, 28, 46, 28, 47, 46, 26, 46, 45, 46, 47, 63, 45, 46, 62, 46, 63, 62, 45, 62, 61, 62, 63, 79, 62, 79, 78, 61, 62, 78, 78, 79, 95, 61, 78, 77, 60, 61, 77, 78, 95, 94, 77, 78, 94, 94, 95, 111, 60, 77, 76, 59, 60, 76, 77, 94, 93, 76, 77, 93, 94, 111, 110, 93, 94, 110, 110, 111, 127, 59, 76, 75, 58, 59, 75, 76, 93, 92, 75, 76, 92, 93, 110, 109, 92, 93, 109, 110, 127, 126, 109, 110, 126, 126, 127, 143, 58, 75, 74, 57, 58, 74, 75, 92, 91, 74, 75, 91, 92, 109, 108, 91, 92, 108, 109, 126, 125, 108, 109, 125, 126, 143, 142, 125, 126, 142, 142, 143, 159, 142, 159, 158, 158, 159, 175, 125, 142, 141, 141, 142, 158, 108, 125, 124, 124, 125, 141, 107, 108, 124, 91, 108, 107, 158, 175, 174, 174, 175, 191, 141, 158, 157, 157, 158, 174, 124, 141, 140, 140, 141, 157, 123, 124, 140, 107, 124, 123, 174, 191, 190, 190, 191, 207, 157, 174, 173, 173, 174, 190, 140, 157, 156, 156, 157, 173, 139, 140, 156, 123, 140, 139, 190, 207, 206, 206, 207, 223, 173, 190, 189, 189, 190, 206, 156, 173, 172, 172, 173, 189, 155, 156, 172, 139, 156, 155, 206, 223, 222, 222, 223, 239, 189, 206, 205, 205, 206, 222, 172, 189, 188, 188, 189, 205, 171, 172, 188, 155, 172, 171, 222, 239, 238, 238, 239, 255, 238, 255, 254, 221, 222, 238, 205, 222, 221, 237, 238, 254, 221, 238, 237, 237, 254, 253, 204, 205, 221, 188, 205, 204, 220, 221, 237, 204, 221, 220, 236, 237, 253, 220, 237, 236, 236, 253, 252, 187, 188, 204, 171, 188, 187, 203, 204, 220, 187, 204, 203, 219, 220, 236, 203, 220, 219, 235, 236, 252, 219, 236, 235, 235, 252, 251, 234, 235, 251, 234, 251, 250, 218, 219, 235, 218, 235, 234, 202, 203, 219, 202, 219, 218, 186, 203, 202, 186, 187, 203, 233, 234, 250, 233, 250, 249, 217, 218, 234, 217, 234, 233, 201, 202, 218, 201, 218, 217, 185, 186, 202, 185, 202, 201, 232, 233, 249, 232, 249, 248, 216, 217, 233, 216, 233, 232, 200, 201, 217, 200, 217, 216, 184, 185, 201, 184, 201, 200, 231, 232, 248, 231, 248, 247, 215, 216, 232, 215, 232, 231, 199, 200, 216, 199, 216, 215, 183, 184, 200, 183, 200, 199, 230, 231, 247, 230, 247, 246, 214, 215, 231, 214, 231, 230, 198, 199, 215, 198, 215, 214, 182, 183, 199, 182, 199, 198, 229, 230, 246, 229, 246, 245, 213, 214, 230, 213, 230, 229, 197, 198, 214, 197, 214, 213, 181, 182, 198, 181, 198, 197, 228, 229, 245, 228, 245, 244, 212, 213, 229, 212, 229, 228, 196, 197, 213, 196, 213, 212, 180, 181, 197, 180, 197, 196, 227, 228, 244, 227, 244, 243, 211, 212, 228, 211, 228, 227, 195, 196, 212, 195, 212, 211, 179, 180, 196, 179, 196, 195, 226, 227, 243, 226, 243, 242, 210, 211, 227, 210, 227, 226, 194, 195, 211, 194, 211, 210, 178, 179, 195, 178, 195, 194, 224, 226, 242, 224, 242, 240, 225, 224, 240, 225, 240, 241, 209, 224, 225, 208, 226, 224, 209, 208, 224, 208, 210, 226, 193, 208, 209, 192, 210, 208, 193, 192, 208, 192, 194, 210, 177, 192, 193, 176, 194, 192, 177, 176, 192, 176, 178, 194, 161, 176, 177, 161, 160, 176, 160, 178, 176, 145, 160, 161, 160, 162, 178, 145, 144, 160, 144, 162, 160, 129, 144, 145, 162, 179, 178, 129, 128, 144, 113, 128, 129, 144, 146, 162, 128, 146, 144, 162, 163, 179, 146, 163, 162, 163, 180, 179, 113, 112, 128, 97, 112, 113, 128, 130, 146, 112, 130, 128, 146, 147, 163, 130, 147, 146, 163, 164, 180, 147, 164, 163, 164, 181, 180, 97, 96, 112, 81, 96, 97, 112, 114, 130, 96, 114, 112, 130, 131, 147, 114, 131, 130, 147, 148, 164, 131, 148, 147, 164, 165, 181, 148, 165, 164, 165, 182, 181, 165, 166, 182, 166, 183, 182, 148, 149, 165, 149, 166, 165, 131, 132, 148, 132, 149, 148, 115, 132, 131, 114, 115, 131, 166, 167, 183, 167, 184, 183, 149, 150, 166, 150, 167, 166, 132, 133, 149, 133, 150, 149, 115, 116, 132, 116, 133, 132, 167, 168, 184, 168, 185, 184, 150, 151, 167, 151, 168, 167, 133, 134, 150, 134, 151, 150, 116, 117, 133, 117, 134, 133, 168, 169, 185, 169, 186, 185, 151, 152, 168, 152, 169, 168, 134, 135, 151, 135, 152, 151, 117, 118, 134, 118, 135, 134, 169, 170, 186, 170, 187, 186, 170, 171, 187, 153, 170, 169, 152, 153, 169, 154, 171, 170, 153, 154, 170, 154, 155, 171, 136, 153, 152, 135, 136, 152, 137, 154, 153, 136, 137, 153, 138, 155, 154, 137, 138, 154, 138, 139, 155, 119, 136, 135, 118, 119, 135, 120, 137, 136, 119, 120, 136, 121, 138, 137, 120, 121, 137, 122, 139, 138, 121, 122, 138, 122, 123, 139, 106, 123, 122, 106, 107, 123, 105, 122, 121, 105, 106, 122, 104, 121, 120, 104, 105, 121, 103, 104, 120, 103, 120, 119, 90, 107, 106, 90, 91, 107, 74, 91, 90, 89, 90, 106, 89, 106, 105, 73, 74, 90, 73, 90, 89, 57, 74, 73, 56, 57, 73, 56, 73, 72, 72, 73, 89, 55, 56, 72, 88, 89, 105, 72, 89, 88, 88, 105, 104, 55, 72, 71, 71, 72, 88, 54, 55, 71, 87, 88, 104, 71, 88, 87, 87, 104, 103, 54, 71, 70, 70, 71, 87, 53, 54, 70, 86, 87, 103, 70, 87, 86, 53, 70, 69, 69, 70, 86, 52, 53, 69, 86, 103, 102, 102, 103, 119, 102, 119, 118, 85, 86, 102, 69, 86, 85, 101, 102, 118, 85, 102, 101, 101, 118, 117, 52, 69, 68, 68, 69, 85, 51, 52, 68, 84, 85, 101, 68, 85, 84, 100, 101, 117, 84, 101, 100, 100, 117, 116, 51, 68, 67, 67, 68, 84, 50, 51, 67, 83, 84, 100, 67, 84, 83, 99, 100, 116, 83, 100, 99, 99, 116, 115, 50, 67, 66, 66, 67, 83, 48, 50, 66, 82, 83, 99, 66, 83, 82, 98, 99, 115, 82, 99, 98, 98, 115, 114, 96, 98, 114, 48, 66, 64, 64, 66, 82, 49, 48, 64, 49, 64, 65, 80, 98, 96, 80, 82, 98, 64, 82, 80, 65, 64, 80, 81, 80, 96, 65, 80, 81)
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_036b0"]
+size = Vector2(256, 256)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_ic0uy"]
+render_priority = 0
+shader = ExtResource("6_gbfbk")
+shader_parameter/surface_color = Color(0, 0, 0, 1)
+shader_parameter/depth_color = Color(0.13527417, 0.47227302, 0.503125, 1)
+shader_parameter/opacity = 0.250000011875
+shader_parameter/_foam = ExtResource("7_ioo17")
+shader_parameter/normal_map = ExtResource("8_wse8f")
+shader_parameter/normal_scale = -0.4879992631800007
+shader_parameter/beer_factor = 2.5330001203175
+shader_parameter/_roughness = 0.254000012065
+shader_parameter/_refraction = 0.030000001425
+shader_parameter/_uv_scale = 0.246000011685
+shader_parameter/_foam_strength = 0.55600002641
+shader_parameter/_foam_size = 0.20000000298023
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_qktwf"]
+shader = ExtResource("11_26xuy")
+shader_parameter/sky_visible = true
+shader_parameter/color_correction = Vector2(1, 1)
+shader_parameter/ground_color = Color(0.3, 0.3, 0.3, 1)
+shader_parameter/horizon_offset = 0.0
+shader_parameter/atm_darkness = 0.5
+shader_parameter/atm_sun_intensity = 18.0
+shader_parameter/atm_day_tint = Color(0.807843, 0.909804, 1, 1)
+shader_parameter/atm_horizon_light_tint = Color(0.980392, 0.635294, 0.462745, 1)
+shader_parameter/atm_night_tint = Color(0, 0, 0, 0)
+shader_parameter/atm_level_params = Vector3(1, 0, 0)
+shader_parameter/atm_thickness = 0.7
+shader_parameter/atm_beta_ray = Vector3(5.804544e-06, 1.3562913e-05, 3.311258e-05)
+shader_parameter/atm_beta_mie = Vector3(3.038e-08, 3.038e-08, 3.038e-08)
+shader_parameter/sun_light_color = Color(1, 0.9919017, 0.8144897, 1)
+shader_parameter/sun_disk_color = Color(0.996094, 0.541334, 0.140076, 1)
+shader_parameter/sun_disk_intensity = 30.0
+shader_parameter/sun_disk_size = 0.04
+shader_parameter/atm_sun_mie_tint = Color(1, 1, 1, 1)
+shader_parameter/atm_sun_mie_intensity = 1.0
+shader_parameter/atm_sun_partial_mie_phase = Vector3(0.36, 1.64, 1.6)
+shader_parameter/moon_color = Color(1, 1, 1, 1)
+shader_parameter/moon_texture = ExtResource("14_il2jm")
+shader_parameter/moon_texture_alignment = Vector3(7, 1.4, 4.8)
+shader_parameter/moon_texture_flip_u = false
+shader_parameter/moon_texture_flip_v = false
+shader_parameter/moon_size = 0.07
+shader_parameter/atm_moon_mie_tint = Color(0.137255, 0.184314, 0.292196, 1)
+shader_parameter/atm_moon_mie_intensity = 0.0
+shader_parameter/atm_moon_partial_mie_phase = Vector3(0.36, 1.64, 1.6)
+shader_parameter/starmap_color = Color(0.709804, 0.709804, 0.709804, 0.854902)
+shader_parameter/starmap_texture = ExtResource("17_bo7i5")
+shader_parameter/starmap_flip_u = false
+shader_parameter/starmap_flip_v = false
+shader_parameter/starmap_alignment = Vector3(2.68288, -0.25891, 0.40101)
+shader_parameter/star_rotation_offset = 9.38899
+shader_parameter/star_rotation = -11.14034017684268
+shader_parameter/star_tilt = -1.2915436464758039
+shader_parameter/star_field_color = Color(1, 1, 1, 1)
+shader_parameter/star_field_texture = ExtResource("16_mc2jv")
+shader_parameter/star_scintillation = 0.75
+shader_parameter/star_scintillation_speed = 0.01
+shader_parameter/noise_tex = ExtResource("15_wjb0r")
+shader_parameter/clouds_night_color = Color(0.090196, 0.094118, 0.129412, 1)
+shader_parameter/cirrus_visible = true
+shader_parameter/cirrus_intensity = 2.0
+shader_parameter/cirrus_coverage = 0.5
+shader_parameter/cirrus_thickness = 1.7
+shader_parameter/cirrus_absorption = 2.0
+shader_parameter/cirrus_sky_tint_fade = 0.5
+shader_parameter/cirrus_size = 1.0
+shader_parameter/cirrus_uv = Vector2(0.16, 0.11)
+shader_parameter/cirrus_position1 = Vector2(0.13973476, 0.13973476)
+shader_parameter/cirrus_position2 = Vector2(0.13973476, 0.13973476)
+shader_parameter/cirrus_texture = ExtResource("12_bc84e")
+shader_parameter/cumulus_visible = true
+shader_parameter/cumulus_intensity = 0.6
+shader_parameter/cumulus_coverage = 0.55
+shader_parameter/cumulus_thickness = 0.0243
+shader_parameter/cumulus_absorption = 2.0
+shader_parameter/cumulus_noise_freq = 2.7
+shader_parameter/cumulus_sky_tint_fade = 0.0
+shader_parameter/cumulus_size = 0.5
+shader_parameter/cumulus_position = Vector2(0.69857603, 0.69857603)
+shader_parameter/cumulus_texture = ExtResource("13_wukud")
+shader_parameter/cumulus_partial_mie_phase = Vector3(0.957564, 1.042436, 0.412)
+shader_parameter/cumulus_mie_intensity = 1.0
+shader_parameter/show_azimuthal_grid = false
+shader_parameter/azimuthal_grid_color = Color(0.87058824, 0.72156864, 0.5294118, 1)
+shader_parameter/azimuthal_grid_rotation_offset = 0.03
+shader_parameter/show_equatorial_grid = false
+shader_parameter/equatorial_grid_color = Color(0, 0.75, 1, 1)
+shader_parameter/equatorial_grid_rotation_offset = 0.03
+shader_parameter/moon_matrix = Basis(-0.6606772, -0.72159046, -0.20691276, -0.28710938, 0.49758095, -0.818524, 0.6935949, -0.48137355, -0.53591573)
+
+[sub_resource type="Sky" id="Sky_bh8nc"]
+sky_material = SubResource("ShaderMaterial_qktwf")
+
+[sub_resource type="Environment" id="Environment_jjr1n"]
+background_mode = 2
+sky = SubResource("Sky_bh8nc")
+ambient_light_source = 3
+ambient_light_color = Color(1, 0.9919017, 0.8144897, 1)
+ambient_light_sky_contribution = 0.805
+reflected_light_source = 2
+tonemap_mode = 3
+tonemap_white = 6.0
+fog_enabled = true
+fog_density = 0.0035
+fog_aerial_perspective = 1.0
+fog_sky_affect = 0.0
+volumetric_fog_anisotropy = -0.53
+volumetric_fog_sky_affect = 0.0
+
+[sub_resource type="CameraAttributesPractical" id="CameraAttributesPractical_gggvi"]
+exposure_multiplier = 1.25
+
+[node name="Node3D" type="Node3D" unique_id=2061065415]
+
+[node name="Terrain3D" type="Terrain3D" parent="." unique_id=1958099366]
+data_directory = "res://terrain_Data"
+material = SubResource("Terrain3DMaterial_tlwt5")
+assets = SubResource("Terrain3DAssets_dwbse")
+collision_layer = 4
+top_level = true
+metadata/_edit_lock_ = true
+
+[node name="Big rocks" type="Node3D" parent="Terrain3D" unique_id=1426577168]
+
+[node name="MeshInstance3D2" parent="Terrain3D/Big rocks" unique_id=1840768538 instance=ExtResource("8_wukud")]
+transform = Transform3D(1.4396007, -0.6318358, 1.2362579, -0.756075, 1.1368608, 1.4614712, -1.1644315, -1.5193193, 0.57945514, 151.76305, 7.70996, 95.581505)
+
+[node name="MeshInstance3D" parent="Terrain3D/Big rocks" unique_id=854267080 instance=ExtResource("21_bc84e")]
+transform = Transform3D(0.02652213, 0.123958826, -2.9973211, 0.32998526, -2.9793694, -0.1202966, -2.9816787, -0.3286266, -0.039974593, 154.21901, 10.470597, 92.59476)
+metadata/_edit_lock_ = true
+
+[node name="Node3D" parent="Terrain3D/Big rocks" unique_id=1511650138 instance=ExtResource("10_il2jm")]
+transform = Transform3D(1.2277937, 1.03450315e-08, 0.42722666, 0, 1.3, -3.1478702e-08, -0.42722666, 2.973027e-08, 1.2277937, 134.65279, 11.753967, 137.23642)
+
+[node name="MeshInstance3D6" parent="Terrain3D/Big rocks/Node3D" unique_id=596212902 instance=ExtResource("11_wjb0r")]
+transform = Transform3D(-0.64125216, 0.6719345, -0.37053987, -0.7451568, -0.6605519, 0.09171973, -0.18313119, 0.33492577, 0.9242769, -2.3409843, -1.2205086, -1.4162903)
+
+[node name="MeshInstance3D4" parent="Terrain3D/Big rocks" unique_id=748142699 instance=ExtResource("11_wjb0r")]
+transform = Transform3D(2.4314995, -2.7248995, -1.631788, 0, -2.0550637, 3.4317217, -3.1761312, -2.0860574, -1.2492216, 251.26662, 13.273321, 39.946407)
+
+[node name="MeshInstance3D5" parent="Terrain3D/Big rocks" unique_id=599395304 instance=ExtResource("11_wjb0r")]
+transform = Transform3D(-1.9387451, -0.42140657, -0.25235662, 0.18873794, -1.5877696, 1.2014012, -0.45348135, 1.1407907, 1.578908, 254.00644, 11.227978, 47.676594)
+
+[node name="MeshInstance3D" parent="Terrain3D/Big rocks/MeshInstance3D5" unique_id=1638726307 instance=ExtResource("8_wukud")]
+transform = Transform3D(-0.5836669, 1.3322291, 0.36673877, 1.0543361, 0.68670845, -0.8165816, -0.89314437, -0.05996397, -1.203618, -1.35849, -3.3923664, 1.1952467)
+
+[node name="Node3D2" parent="Terrain3D/Big rocks" unique_id=1866337741 instance=ExtResource("12_mc2jv")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 84.83855, 9.84107, 100.45558)
+
+[node name="Node3D3" parent="Terrain3D/Big rocks" unique_id=122826619 instance=ExtResource("13_bo7i5")]
+transform = Transform3D(0.94499457, 0, 0.32708594, 0, 1, 0, -0.32708594, 0, 0.94499457, 206.34142, 10.940586, 168.55577)
+
+[node name="MeshInstance3D3" parent="Terrain3D/Big rocks" unique_id=710383533 instance=ExtResource("14_4h6ng")]
+transform = Transform3D(1.0397941, 1.0559417, -4.775334, -0.2246595, 4.887227, 1.0317659, 4.885525, 0, 1.0637875, 47.018574, 11.341118, 195.2588)
+
+[node name="MeshInstance3D6" parent="Terrain3D/Big rocks" unique_id=995472074 instance=ExtResource("15_k83mh")]
+transform = Transform3D(-4.756957, -0.8634317, -1.2750864, 0.7475089, -4.914333, 0.5390405, -1.3463248, 0.32221085, 4.8045387, 1.7587433, 10.754467, 221.04626)
+
+[node name="MeshInstance3D7" parent="Terrain3D/Big rocks" unique_id=1077607726 instance=ExtResource("15_k83mh")]
+transform = Transform3D(-4.646528, -0.1408124, -1.841183, -1.5317897, 3.078058, 3.630315, 1.0312144, 3.9377327, -2.9035957, 4.0744143, 10.754467, 229.50659)
+
+[node name="MeshInstance3D8" parent="Terrain3D/Big rocks" unique_id=195748437 instance=ExtResource("15_k83mh")]
+transform = Transform3D(-2.1136596, 6.250722, 0.39117444, -6.0013075, -1.9033215, -2.0133982, -1.7913257, -0.99897116, 6.283734, -3.3668165, 15.667601, 226.33334)
+
+[node name="Node3D4" parent="Terrain3D/Big rocks" unique_id=1275950442 instance=ExtResource("15_o3ebs")]
+transform = Transform3D(0.3525605, 0, -1.4579785, 0, 1.5, 0, 1.4579785, 0, 0.3525605, 128.51779, 10.754467, 214.43991)
+
+[node name="MeshInstance3D2" parent="Terrain3D/Big rocks/Node3D4" unique_id=551576972 instance=ExtResource("21_bc84e")]
+transform = Transform3D(0.90631986, 0.41389918, 0.08527654, 0.33513287, -0.82688814, 0.45159873, 0.25743055, -0.38071403, -0.8881368, 4.185089, -1.9427085, 2.9457283)
+
+[node name="MeshInstance3D3" parent="Terrain3D/Big rocks/Node3D4" unique_id=1513369252 instance=ExtResource("21_bc84e")]
+transform = Transform3D(0.8816006, 0.31120288, -0.35487092, -0.30566195, 0.9493252, 0.07315657, 0.35965437, 0.043976136, 0.9320489, -0.44985962, -2.6513867, 5.593048)
+
+[node name="MeshInstance3D4" parent="Terrain3D/Big rocks/Node3D4" unique_id=1943047848 instance=ExtResource("8_wukud")]
+transform = Transform3D(-0.09199479, 1.768305, 0.9298573, -1.2601758, 0.67095816, -1.4006321, -1.5503201, -0.65031743, 1.0833256, -2.179657, -1.8720908, 3.8361282)
+
+[node name="MeshInstance3D5" parent="Terrain3D/Big rocks/Node3D4" unique_id=1780690891 instance=ExtResource("8_wukud")]
+transform = Transform3D(0.12621751, 0.30448407, -2.9818387, -2.233028, 2.0003846, 0.10974394, 1.9994112, 2.2148936, 0.31080163, 1.019043, -2.4152179, -4.089573)
+
+[node name="MeshInstance3D9" parent="Terrain3D/Big rocks" unique_id=340517154 instance=ExtResource("21_bc84e")]
+transform = Transform3D(1.7700728, 5.8683424, 2.1023316, -1.6118385, 2.5420022, -5.738519, -6.021563, 1.0445952, 2.154066, 15.861187, 11.273342, 37.19514)
+
+[node name="OccluderInstance3D" type="OccluderInstance3D" parent="Terrain3D" unique_id=1739132796]
+occluder = SubResource("ArrayOccluder3D_55kwu")
+
+[node name="ForestAudio" type="Node3D" parent="Terrain3D" unique_id=1261405967]
+
+[node name="River" type="Node3D" parent="Terrain3D/ForestAudio" unique_id=573072465]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 131.33159, 0, 94.55872)
+
+[node name="River" type="AudioStreamPlayer3D" parent="Terrain3D/ForestAudio/River" unique_id=1463983549]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 28.552322, 7.467496, -7.9034576)
+stream = ExtResource("36_f3o6s")
+attenuation_model = 3
+volume_db = -12.0
+autoplay = true
+
+[node name="River2" type="AudioStreamPlayer3D" parent="Terrain3D/ForestAudio/River" unique_id=1402677690]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 28.552322, 7.467496, -7.9034576)
+stream = ExtResource("37_w4lh7")
+attenuation_model = 3
+volume_db = -12.0
+autoplay = true
+
+[node name="Ambientair" type="Node3D" parent="Terrain3D/ForestAudio" unique_id=1675427049]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 114.30725, 0, 98.71988)
+
+[node name="Air1" type="AudioStreamPlayer3D" parent="Terrain3D/ForestAudio/Ambientair" unique_id=1571299062]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 6.312462, 0)
+stream = ExtResource("38_olr1q")
+attenuation_model = 3
+volume_db = -35.0
+unit_size = 100.0
+autoplay = true
+
+[node name="Air2" type="AudioStreamPlayer3D" parent="Terrain3D/ForestAudio/Ambientair" unique_id=64009398]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 6.312462, 0)
+stream = ExtResource("39_q42o5")
+attenuation_model = 3
+volume_db = -10.0
+unit_size = 100.0
+autoplay = true
+
+[node name="Chirp" type="Node3D" parent="Terrain3D/ForestAudio" unique_id=748447753]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 117.881546, 0, 97.258644)
+
+[node name="Chirp1" type="AudioStreamPlayer3D" parent="Terrain3D/ForestAudio/Chirp" unique_id=1405164632]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 11.712387, 23.432997, 7.219963)
+stream = ExtResource("40_iett8")
+volume_db = -15.0
+autoplay = true
+
+[node name="Chirp2" type="AudioStreamPlayer3D" parent="Terrain3D/ForestAudio/Chirp" unique_id=508554029]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -65.87807, 23.432997, -15.641518)
+stream = ExtResource("40_iett8")
+volume_db = -15.0
+autoplay = true
+
+[node name="Chirp3" type="AudioStreamPlayer3D" parent="Terrain3D/ForestAudio/Chirp" unique_id=1694447132]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -28.814774, 23.432997, 114.94599)
+stream = ExtResource("40_iett8")
+volume_db = -15.0
+autoplay = true
+
+[node name="Chirp4" type="AudioStreamPlayer3D" parent="Terrain3D/ForestAudio/Chirp" unique_id=681811943]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.7240143, 23.432997, 19.001328)
+stream = ExtResource("41_r5m4j")
+volume_db = -10.0
+autoplay = true
+
+[node name="Chirp5" type="AudioStreamPlayer3D" parent="Terrain3D/ForestAudio/Chirp" unique_id=576367564]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -33.361526, 23.432997, 24.415108)
+stream = ExtResource("41_r5m4j")
+volume_db = -10.0
+autoplay = true
+
+[node name="Chirp6" type="AudioStreamPlayer3D" parent="Terrain3D/ForestAudio/Chirp" unique_id=40327656]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.8957977, 23.432997, 82.9007)
+stream = ExtResource("41_r5m4j")
+volume_db = -10.0
+autoplay = true
+
+[node name="Chirp_1" type="AudioStreamPlayer3D" parent="Terrain3D/ForestAudio/Chirp" unique_id=1384936917]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 49.46849, 23.432997, 108.36466)
+stream = ExtResource("42_e77ka")
+volume_db = -5.0
+autoplay = true
+
+[node name="Chirp_2" type="AudioStreamPlayer3D" parent="Terrain3D/ForestAudio/Chirp" unique_id=1065450855]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -21.54065, 23.432997, -3.86438)
+stream = ExtResource("42_e77ka")
+volume_db = -5.0
+autoplay = true
+
+[node name="Chirp_3" type="AudioStreamPlayer3D" parent="Terrain3D/ForestAudio/Chirp" unique_id=213560576]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -47.865967, 23.432997, 36.662773)
+stream = ExtResource("42_e77ka")
+volume_db = -5.0
+autoplay = true
+
+[node name="Chirp_4" type="AudioStreamPlayer3D" parent="Terrain3D/ForestAudio/Chirp" unique_id=1463392717]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 72.13403, 23.432997, 11.662773)
+stream = ExtResource("42_e77ka")
+volume_db = -5.0
+autoplay = true
+
+[node name="Chirp_1_5" type="AudioStreamPlayer3D" parent="Terrain3D/ForestAudio/Chirp" unique_id=780001397]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 93.609955, 23.432997, 17.204948)
+stream = ExtResource("43_c0wax")
+autoplay = true
+
+[node name="Chirp_1_6" type="AudioStreamPlayer3D" parent="Terrain3D/ForestAudio/Chirp" unique_id=1078910957]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -16.466904, 23.433004, -16.67846)
+stream = ExtResource("43_c0wax")
+autoplay = true
+
+[node name="Chirp_1_7" type="AudioStreamPlayer3D" parent="Terrain3D/ForestAudio/Chirp" unique_id=360744132]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -65.4669, 23.433004, 4.321541)
+stream = ExtResource("43_c0wax")
+autoplay = true
+
+[node name="Chirp_1_8" type="AudioStreamPlayer3D" parent="Terrain3D/ForestAudio/Chirp" unique_id=1338784315]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -55.075317, 23.433004, 86.761406)
+stream = ExtResource("43_c0wax")
+autoplay = true
+
+[node name="Water" type="MeshInstance3D" parent="Terrain3D" unique_id=123465259]
+transform = Transform3D(-0.25881904, 0, -0.9659258, 0, 1, 0, 0.9659258, 0, -0.25881904, 127.373, 8.54921, 128.57552)
+mesh = SubResource("PlaneMesh_036b0")
+surface_material_override/0 = SubResource("ShaderMaterial_ic0uy")
+metadata/_edit_group_ = true
+metadata/_edit_lock_ = true
+
+[node name="Sky3D" type="WorldEnvironment" parent="." unique_id=1211014161]
+environment = SubResource("Environment_jjr1n")
+camera_attributes = SubResource("CameraAttributesPractical_gggvi")
+script = ExtResource("18_4h6ng")
+editor_time_enabled = false
+game_time_enabled = false
+current_time = 11.07
+camera_exposure = 1.25
+sun_energy = 1.8
+sun_shadow_opacity = 0.87
+sky_contribution = 0.805
+wind_direction = 2.35619451204804
+metadata/_custom_type_script = "uid://deo0gxkmk2ahd"
+
+[node name="SunLight" type="DirectionalLight3D" parent="Sky3D" unique_id=1616938568]
+transform = Transform3D(0.9480489, -0.2436033, 0.2045992, 0, 0.6431413, 0.76574755, -0.31812483, -0.7259661, 0.60972935, 0.2045992, 0.76574755, 0.60972935)
+light_color = Color(1, 0.9919017, 0.8144897, 1)
+light_energy = 1.8
+shadow_enabled = true
+shadow_opacity = 0.87
+
+[node name="MoonLight" type="DirectionalLight3D" parent="Sky3D" unique_id=1037480269]
+transform = Transform3D(0, -0.7203653, 0.69359493, -0.74395, -0.46348462, -0.4813735, 0.6682353, -0.516, -0.53591573, 0.69359493, -0.4813735, -0.53591573)
+light_color = Color(0.9086473, 0.95686275, 0.9511372, 1)
+light_energy = 0.0
+
+[node name="SkyDome" type="Node" parent="Sky3D" unique_id=1823565804]
+script = ExtResource("19_o3ebs")
+tonemap_level = 1.0
+sun_disk_size = 0.04
+sun_azimuth = -2.8178418
+sun_altitude = -0.6985935
+sun_light_color = Color(1, 0.9919017, 0.8144897, 1)
+sun_horizon_light_color = Color(0.9704002, 0.8515699, 0.98039216, 1)
+sun_light_energy = 1.8
+moon_azimuth = -0.9129474
+moon_altitude = -2.0730174
+moon_light_color = Color(0.9086473, 0.95686275, 0.9511372, 1)
+fog_visible = false
+wind_direction = 2.35619451204804
+
+[node name="TimeOfDay" type="Node" parent="Sky3D" unique_id=693528810]
+script = ExtResource("20_k83mh")
+editor_time_enabled = false
+game_time_enabled = false
+dome_path = NodePath("../SkyDome")
+current_time = 11.07
+day = 9
+
+[node name="LensFlare" parent="Sky3D" unique_id=35303123 instance=ExtResource("57_sedwk")]
+flareBlur = 3.744
+ghostCount = 1
+
+[node name="butterfly" type="Node3D" parent="." unique_id=472654685]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 102.42238, 0, 95.80622)
+metadata/_edit_lock_ = true
+
+[node name="Area3D" parent="butterfly" unique_id=388163194 instance=ExtResource("49_55kwu")]
+transform = Transform3D(0.76021326, 0, -0.64967364, 0, 1, 0, 0.64967364, 0, 0.76021326, -1.0513, 10.482239, 4.8106155)
+
+[node name="Area3D2" parent="butterfly" unique_id=778390426 instance=ExtResource("49_55kwu")]
+transform = Transform3D(0.76021326, 0, -0.64967364, 0, 1, 0, 0.64967364, 0, 0.76021326, -36.490173, 10.482239, 29.676567)
+
+[node name="Area3D3" parent="butterfly" unique_id=1673092679 instance=ExtResource("49_55kwu")]
+transform = Transform3D(0.76021326, 0, -0.64967364, 0, 1, 0, 0.64967364, 0, 0.76021326, 42.023575, 10.482239, 55.717278)
+
+[node name="bridge" parent="." unique_id=1865252733 instance=ExtResource("60_c0wax")]
+transform = Transform3D(0.88888925, 0, 0.45812216, 0, 1, 0, -0.45812216, 0, 0.88888925, 127.21681, 10.027454, 122.27132)
+metadata/_edit_lock_ = true
+
+[node name="bridge2" parent="." unique_id=728106487 instance=ExtResource("60_c0wax")]
+transform = Transform3D(0.72647876, 0, 0.687189, 0, 1, 0, -0.687189, 0, 0.72647876, 75.48544, 9.356411, 150.43277)
+metadata/_edit_lock_ = true
+
+[node name="Player" parent="." unique_id=988198540 instance=ExtResource("59_e77ka")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 116.49875, 13.209948, 97.251144)
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1129043533]
+
+[node name="Label" type="Label" parent="CanvasLayer" unique_id=1406950166]
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -194.0
+offset_top = -32.0
+grow_horizontal = 0
+grow_vertical = 0
+theme_override_colors/font_color = Color(0.30058438, 1, 0.2014417, 1)
+theme_override_font_sizes/font_size = 20
+text = "Frames"
+script = ExtResource("60_sedwk")
+
+[node name="Label2" type="Label" parent="CanvasLayer" unique_id=118748996]
+offset_right = 1.0
+offset_bottom = 23.0
+text = "MOVEMENT
+W / A / S / D  -  Move
+Q / E          -  Up / Down
+
+CAMERA
+Mouse          -  Look Around
+Mouse Wheel    -  Change Speed
+
+SHIFT          -  Fast Movement
+
+H - Hide/ShowUI"
+script = ExtResource("61_sedwk")

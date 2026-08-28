@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://djksekm3qwkdb"]
+
+[ext_resource type="PackedScene" uid="uid://cblsas6kceljk" path="res://env models/plants/grass/grass2.gltf" id="1_iu5uo"]
+[ext_resource type="Material" uid="uid://cp648vaq6326j" path="res://env models/plants/grass/materials/ferm_material.tres" id="2_ahar4"]
+
+[node name="grass2" unique_id=77302008 instance=ExtResource("1_iu5uo")]
+
+[node name="Plant_005" parent="." index="0" unique_id=899579798]
+surface_material_override/0 = ExtResource("2_ahar4")

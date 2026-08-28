@@ -1,0 +1,13 @@
+[gd_scene format=3 uid="uid://dd6v46w7lb8o8"]
+
+[ext_resource type="Script" uid="uid://dn8lhn0j8f6ki" path="res://addons/SIsilicon.vfx.lens flare/lens-flare.gd" id="1_egrtn"]
+
+[node name="LensFlare" type="Node" unique_id=35303123]
+script = ExtResource("1_egrtn")
+flareStrength = 2.004
+flareBias = 0.813
+flareBlur = 1.312
+distortion = 35.911
+ghostSpacing = 0.124
+haloWidth = 0.218
+metadata/_custom_type_script = "uid://dn8lhn0j8f6ki"

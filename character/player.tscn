@@ -1,0 +1,25 @@
+[gd_scene format=3 uid="uid://cqe8jd0vjbvfo"]
+
+[ext_resource type="Script" uid="uid://rv8kjmcinp0j" path="res://character/player.gd" id="1_hhoun"]
+[ext_resource type="Script" uid="uid://bd046eokvcnu2" path="res://addons/phantom_camera/scripts/phantom_camera_host/phantom_camera_host.gd" id="2_bdyh8"]
+[ext_resource type="Script" uid="uid://csjccrhj5wnx7" path="res://addons/phantom_camera/scripts/phantom_camera/phantom_camera_3d.gd" id="3_qe16m"]
+[ext_resource type="Script" uid="uid://8umksf8e80fw" path="res://addons/phantom_camera/scripts/resources/tween_resource.gd" id="4_dkowc"]
+
+[sub_resource type="Resource" id="Resource_pw6nv"]
+script = ExtResource("4_dkowc")
+
+[node name="Node3D" type="Node3D" unique_id=988198540]
+script = ExtResource("1_hhoun")
+
+[node name="Camera3D" type="Camera3D" parent="." unique_id=1641065864]
+
+[node name="PhantomCameraHost" type="Node" parent="Camera3D" unique_id=1795094990]
+process_priority = 300
+process_physics_priority = 300
+script = ExtResource("2_bdyh8")
+metadata/_custom_type_script = "uid://bd046eokvcnu2"
+
+[node name="PhantomCamera3D" type="Node3D" parent="." unique_id=1688674134]
+script = ExtResource("3_qe16m")
+tween_resource = SubResource("Resource_pw6nv")
+metadata/_custom_type_script = "uid://csjccrhj5wnx7"

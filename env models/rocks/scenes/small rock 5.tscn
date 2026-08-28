@@ -1,0 +1,8 @@
+[gd_scene format=3 uid="uid://d0tys3t4w5ysf"]
+
+[ext_resource type="ArrayMesh" uid="uid://dd45b0yxfwsip" path="res://env models/rocks/small rocks/rock 5.obj" id="1_0spfx"]
+[ext_resource type="Material" uid="uid://chjdqaa2widwo" path="res://env models/rocks/rock 3.tres" id="2_56ivb"]
+
+[node name="MeshInstance3D" type="MeshInstance3D" unique_id=616121846]
+mesh = ExtResource("1_0spfx")
+surface_material_override/0 = ExtResource("2_56ivb")

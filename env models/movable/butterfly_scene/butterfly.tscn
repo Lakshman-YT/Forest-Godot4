@@ -1,0 +1,20 @@
+[gd_scene format=3 uid="uid://6ad2ade28xix"]
+
+[ext_resource type="PackedScene" uid="uid://gw5n6vytalwh" path="res://env models/movable/butterfly.gltf" id="1_speeq"]
+[ext_resource type="Material" uid="uid://bq53lggf3axxq" path="res://env models/movable/material/blue_butterfly.res" id="2_0kxu8"]
+[ext_resource type="Script" uid="uid://e6247sylt2p4" path="res://env models/movable/script/butterfly.gd" id="2_hgdlo"]
+[ext_resource type="Material" uid="uid://rfr28guukb13" path="res://env models/movable/material/yellow_butterfly.res" id="4_hgdlo"]
+
+[node name="butterfly" unique_id=1853365961 instance=ExtResource("1_speeq")]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 0, 0, 0)
+script = ExtResource("2_hgdlo")
+material = Array[StandardMaterial3D]([ExtResource("2_0kxu8"), ExtResource("4_hgdlo")])
+
+[node name="Skeleton3D" parent="Armature" parent_id_path=PackedInt32Array(1797406419) index="0" unique_id=810886891]
+bones/0/position = Vector3(-5.989402e-17, 4.5064446e-08, 1.0309542)
+bones/0/rotation = Quaternion(-0.37944397, 0.119957685, 0.049688105, 0.9160587)
+bones/1/position = Vector3(-1.50443e-16, 4.506445e-08, 1.0309542)
+bones/1/rotation = Quaternion(0.9160587, -0.049688082, -0.11995767, -0.37944388)
+
+[node name="Plane" parent="Armature/Skeleton3D" index="0" unique_id=692805301]
+surface_material_override/0 = ExtResource("2_0kxu8")

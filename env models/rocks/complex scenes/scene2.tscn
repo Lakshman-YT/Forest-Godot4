@@ -1,0 +1,23 @@
+[gd_scene format=3 uid="uid://su6xvw0p4vgv"]
+
+[ext_resource type="PackedScene" uid="uid://dm442rp020xed" path="res://env models/rocks/scenes/big rock 2.tscn" id="1_td7yv"]
+[ext_resource type="PackedScene" uid="uid://dvgbsrwng2f1f" path="res://env models/rocks/scenes/big rock 1.tscn" id="2_6wu6f"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_td7yv"]
+size = Vector3(6.6411133, 10.4166565, 4.053711)
+
+[node name="Node3D" type="Node3D" unique_id=1866337741]
+
+[node name="MeshInstance3D2" parent="." unique_id=854267080 instance=ExtResource("2_6wu6f")]
+transform = Transform3D(0.59016293, -0.022693697, -0.8069654, 0.006992972, 0.99971086, -0.02299988, 0.8072541, 0.007930534, 0.5901506, -1.88093, 6.51783, 0.30032384)
+
+[node name="MeshInstance3D" parent="." unique_id=940499848 instance=ExtResource("1_td7yv")]
+transform = Transform3D(2.3058224, 1.3101143, -1.4024209, -1.9191624, 1.5740677, -1.6849717, 0, 2.1922395, 2.0479474, 0, 2.192958, 0)
+
+[node name="StaticBody3D" type="StaticBody3D" parent="." unique_id=100370499]
+collision_layer = 2
+collision_mask = 0
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D" unique_id=1397417052]
+transform = Transform3D(0.63464963, -0.7728, 0, 0.7728, 0.63464963, 0, 0, 0, 1, 0.38791144, 2.1059296, 0)
+shape = SubResource("BoxShape3D_td7yv")

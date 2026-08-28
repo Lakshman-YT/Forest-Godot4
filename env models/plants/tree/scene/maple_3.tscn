@@ -1,0 +1,23 @@
+[gd_scene format=3 uid="uid://dkb2214twtumf"]
+
+[ext_resource type="PackedScene" uid="uid://eigfpr7kngs7" path="res://env models/plants/tree/maple3.gltf" id="1_vr2fj"]
+[ext_resource type="Material" uid="uid://cs67a8ad6p1kr" path="res://env models/plants/tree/materials/maple_bark_material.res" id="2_dbdvu"]
+[ext_resource type="Material" uid="uid://baccdhucqk80q" path="res://env models/plants/tree/materials/maple_leaf_material.tres" id="3_bgl46"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_vr2fj"]
+size = Vector3(1, 6.1766357, 1)
+
+[node name="maple3" unique_id=651741000 instance=ExtResource("1_vr2fj")]
+
+[node name="Acer_large_2_LOD0" parent="." index="0" unique_id=1351125084]
+transform = Transform3D(0.977, 0, 0, 0, 0.977, 0, 0, 0, 0.977, 0, 0, 0)
+surface_material_override/0 = ExtResource("2_dbdvu")
+surface_material_override/1 = ExtResource("3_bgl46")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="." index="1" unique_id=2053223239]
+collision_layer = 2
+collision_mask = 0
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D" index="0" unique_id=2141490206]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.5883179, 0)
+shape = SubResource("BoxShape3D_vr2fj")

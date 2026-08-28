@@ -1,0 +1,23 @@
+# Blender 5.1.2 MTL File: 'plants.blend'
+# www.blender.org
+
+newmtl Bark_Mat.001
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+map_Ns D:/assets/extracted/MAPLE/source/acer_roughness.png
+map_Bump -bm 10.000000 D:/assets/extracted/MAPLE/source/acer_normal.png
+
+newmtl Cluster_Mat
+Ns 206.089096
+Ka 1.000000 1.000000 1.000000
+Kd 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 3
